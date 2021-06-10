@@ -23,13 +23,11 @@ if ($id=="")
 {
                 $sql="select id,nom,prenom from personnage where rfid='$rfid'";
                 $result=mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysqli_error($db));
-
                 //on explose les resultats pour plus de clarté
                 while($row = mysqli_fetch_assoc($result)) {
                         $id=$row["id"];
                         $pseudo=$row["prenom"].' '.$row["nom"];
                 }
-echo "$rfid $id $pseudo";
 }
 else
 {
