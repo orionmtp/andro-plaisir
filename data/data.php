@@ -1,4 +1,5 @@
 <?php
+// test
 include '../common/admin/login.php';
 
 // On commence par récupérer les champs
